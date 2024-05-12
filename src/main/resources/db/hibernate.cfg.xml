@@ -8,6 +8,7 @@
         <property name="connection.password">mysql</property>
         <property name="hibernate.show_sql ">true</property>
         <property name="hbm2ddl.auto">validate</property>
+<!--        <property name="hbm2ddl.auto">update</property>-->
 
     </session-factory>
 </hibernate-configuration>

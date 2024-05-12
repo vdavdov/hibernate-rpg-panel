@@ -5,10 +5,12 @@
         xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
         http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-latest.xsd">
     
-    <changeSet id="2" author="vdavdov">
+    <changeSet id="1" author="vdavdov">
         <createTable tableName="race">
             <column name="value" type="varchar(64)">
-                <constraints foreignKeyName="race"/>
+                <constraints nullable="false"
+                             primaryKey="true"
+                             primaryKeyName="pk_race"/>
             </column>
         </createTable>
     </changeSet>
