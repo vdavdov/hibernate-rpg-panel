@@ -8,8 +8,6 @@
         <runningAs  username="root"/>
     </preConditions>
 
-    <include file="/db/2024/05/12-17-00-race-table.xml" relativeToChangelogFile="false"/>
-    <include file="/db/2024/05/12-17-30-profession-table.xml" relativeToChangelogFile="false"/>
-    <include file="/db/2024/05/12-17-55-player-table.xml" relativeToChangelogFile="false"/>
-    <include file="db/2024/05/12-18-00-init.xml" relativeToChangelogFile="false"/>
+    <!-- todo -->
+
 </databaseChangeLog>

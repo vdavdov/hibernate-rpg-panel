@@ -27,9 +27,11 @@ public class Player {
     private String title;
 
     @Enumerated(EnumType.ORDINAL)
+    @Column(nullable = false, name = "race")
     private Race race;
 
     @Enumerated(EnumType.ORDINAL)
+    @Column(nullable = false, name = "profession")
     private Profession profession;
 
     @Column(nullable = false, name = "birthday")

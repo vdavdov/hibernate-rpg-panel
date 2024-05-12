@@ -1,7 +1,6 @@
 package com.game.repository;
 
 import com.game.entity.Player;
-import jakarta.persistence.EntityManager;
 import lombok.Getter;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
@@ -22,7 +21,7 @@ public class PlayerRepositoryDB implements IPlayerRepository {
 
     public PlayerRepositoryDB() {
         sessionFactory = new Configuration()
-                .configure()
+                .configure("db/hibernate.cfg.xml")
                 .addAnnotatedClass(Player.class)
                 .buildSessionFactory();
 

@@ -5,7 +5,5 @@
         xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
         http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-latest.xsd">
 
-    <changeSet id="4" author="vdavdov">
-
-    </changeSet>
+        <!-- todo -->
 </databaseChangeLog>

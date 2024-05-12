@@ -5,46 +5,5 @@
         xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
         http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-latest.xsd">
 
-    <changeSet id="3" author="vdavod">
-        <createTable tableName="player">
-            <column name="id" type="integer" autoIncrement="true">
-                <constraints primaryKey="true" nullable="false"/>
-            </column>
-            <column name="name" type="varchar(256)">
-                <constraints nullable="false"/>
-            </column>
-            <column name="title" type="varchar(256)">
-                <constraints nullable="false"/>
-            </column>
-            <column name="birthday" type="timestamp">
-                <constraints nullable="false"/>
-            </column>
-            <column name="banned" type="int">
-                <constraints nullable="false"/>
-            </column>
-            <column name="level" type="int">
-                <constraints nullable="false"/>
-            </column>
-            <column name="race" type="varchar(64)" >
-                <constraints nullable="false"/>
-            </column>
-            <column name="profession" type="varchar(64)">
-                <constraints nullable="false"/>
-            </column>
-        </createTable>
-        <addForeignKeyConstraint baseTableName="player"
-                                 baseColumnNames="race"
-                                 constraintName="fk_player_role"
-                                 onDelete="RESTRICT"
-                                 onUpdate="RESTRICT"
-                                 referencedTableName="race"
-                                 referencedColumnNames="value"/>
-        <addForeignKeyConstraint baseColumnNames="profession"
-                                 baseTableName="player"
-                                 constraintName="fk_player_profession"
-                                 onDelete="RESTRICT"
-                                 onUpdate="RESTRICT"
-                                 referencedColumnNames="value"
-                                 referencedTableName="profession"/>
-    </changeSet>
+    <!-- todo -->
 </databaseChangeLog>
