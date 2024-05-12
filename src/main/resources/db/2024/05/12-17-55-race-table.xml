@@ -4,8 +4,13 @@
         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
         xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
         http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-latest.xsd">
-
-    <changeSet id="4" author="vdavdov">
-
+    
+    <changeSet id="2" author="vdavdov">
+        <createTable tableName="race">
+            <column name="value" type="varchar(64)">
+                <constraints foreignKeyName="race"/>
+            </column>
+        </createTable>
     </changeSet>
+
 </databaseChangeLog>

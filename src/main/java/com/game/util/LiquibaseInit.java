@@ -12,7 +12,7 @@ public class LiquibaseInit {
             CommandScope update = new CommandScope("update");
 
             update.addArgumentValue("changelogFile", "db/changelog.xml");
-            update.addArgumentValue("url", "jdbc:mysql://localhost:3306");
+            update.addArgumentValue("url", "jdbc:mysql://localhost:3306/rpg");
             update.addArgumentValue("username", "root");
             update.addArgumentValue("password", "mysql");
 

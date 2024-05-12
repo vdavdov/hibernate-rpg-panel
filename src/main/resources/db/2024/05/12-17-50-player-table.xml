@@ -7,14 +7,25 @@
 
     <changeSet id="1" author="vdavod">
         <createTable tableName="player">
-            <column name="id" type="java.sql.Types.BIGINT" autoIncrement="true"/>
-            <column name="name" type="varchar(255)"/>
-            <column name="level" type="INTEGER"/>
-            <column name="banned" type="BOOLEAN"/>
-            <column name="birthday" type="TIMESTAMP"/>
-            <column name="profession" type="varchar(255)"/>
-            <column name="race" type="varchar(255)"/>
-            <column name="title" type="varchar"/>
+            <column name="id" type="integer" autoIncrement="true">
+                <constraints primaryKey="true" nullable="false"/>
+            </column>
+            <column name="name" type="varchar(256)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="title" type="varchar(256)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="birthday" type="timestamp">
+                <constraints nullable="false"/>
+            </column>
+            <column name="banned" type="boolean">
+                <constraints nullable="false"/>
+            </column>
+            <column name="level" type="integer">
+                <constraints nullable="false"/>
+            </column>
+            <column name=""
         </createTable>
     </changeSet>
 </databaseChangeLog>
