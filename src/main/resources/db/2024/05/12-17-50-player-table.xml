@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<databaseChangeLog
+        xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
+        http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-latest.xsd">
+
+    <changeSet id="1" author="vdavod">
+        <createTable tableName="player">
+            <column name="id" type="java.sql.Types.BIGINT" autoIncrement="true"/>
+            <column name="name" type="varchar(255)"/>
+            <column name="level" type="INTEGER"/>
+            <column name="banned" type="BOOLEAN"/>
+            <column name="birthday" type="TIMESTAMP"/>
+            <column name="profession" type="varchar(255)"/>
+            <column name="race" type="varchar(255)"/>
+            <column name="title" type="varchar"/>
+        </createTable>
+    </changeSet>
+</databaseChangeLog>
