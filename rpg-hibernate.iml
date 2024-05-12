@@ -14,7 +14,7 @@
       <configuration>
         <setting name="validation-enabled" value="true" />
         <datasource-mapping>
-          <factory-entry name="rpg-hibernate" value="61bd9abd-9ee9-48db-9086-7b5d83b897f6" />
+          <factory-entry name="rpg-hibernate" value="27e83227-3c80-4a8d-8dd2-4a2cac7f8043" />
         </datasource-mapping>
         <naming-strategy-map />
       </configuration>
