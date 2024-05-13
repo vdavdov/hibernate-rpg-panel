@@ -5,5 +5,15 @@
         xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
         http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-latest.xsd">
 
-    <!-- todo -->
+    <changeSet id="1" author="vdavdov">
+        <createTable tableName="race">
+            <column name="race_id" type="INT" startWith="0" autoIncrement="true">
+                <constraints primaryKey="true" nullable="false"/>
+            </column>
+            <column name="value" type="VARCHAR(64)">
+                <constraints nullable="false"/>
+            </column>
+        </createTable>
+
+    </changeSet>
 </databaseChangeLog>

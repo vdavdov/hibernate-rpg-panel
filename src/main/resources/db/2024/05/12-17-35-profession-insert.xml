@@ -5,5 +5,30 @@
         xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
         http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-latest.xsd">
 
-    <!-- todo -->
+    <changeSet id="4" author="vdavdov">
+        <insert tableName="profession">
+            <column name="value"> WARRIOR</column>
+        </insert>
+        <insert tableName="profession">
+            <column name="value" type="varchar(64)">ROGUE</column>
+        </insert>
+        <insert tableName="profession">
+            <column name="value" type="varchar(64)">SORCERER</column>
+        </insert>
+        <insert tableName="profession">
+            <column name="value" type="varchar(64)">CLERIC</column>
+        </insert>
+        <insert tableName="profession">
+            <column name="value" type="varchar(64)">PALADIN</column>
+        </insert>
+        <insert tableName="profession">
+            <column name="value" type="varchar(64)">NAZGUL</column>
+        </insert>
+        <insert tableName="profession">
+            <column name="value" type="varchar(64)">WARLOCK</column>
+        </insert>
+        <insert tableName="profession">
+            <column name="value" type="varchar(64)">DRUID</column>
+        </insert>
+    </changeSet>
 </databaseChangeLog>

@@ -5,5 +5,36 @@
         xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
         http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-latest.xsd">
 
-    <!-- todo -->
+    <changeSet id="5" author="vdavdov">
+        <createTable tableName="player">
+            <column name="id" type="INT" autoIncrement="true">
+                <constraints primaryKey="true"/>
+            </column>
+            <column name="name" type="VARCHAR(255)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="title" type="VARCHAR(255)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="race" type="INT" >
+                <constraints nullable="false"/>
+            </column>
+            <column name="profession" type="INT">
+                <constraints nullable="false"/>
+            </column>
+            <column name="birthday" type="timestamp">
+                <constraints nullable="false"/>
+            </column>
+            <column name="level" type="INT">
+                <constraints nullable="false"/>
+            </column>
+            <column name="banned" type="boolean">
+                <constraints nullable="false"/>
+            </column>
+        </createTable>
+<!--        <addForeignKeyConstraint baseTableName="player" baseColumnNames="race" constraintName="FK_PLAYER_RACE" referencedTableName="race"-->
+<!--                                 referencedColumnNames="race_id"/>-->
+<!--        <addForeignKeyConstraint baseTableName="player" baseColumnNames="profession" constraintName="FK_PLAYER_PROFESSION" referencedTableName="profession"-->
+<!--                                 referencedColumnNames="profession_id"/>-->
+    </changeSet>
 </databaseChangeLog>
