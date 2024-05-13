@@ -14,7 +14,7 @@ import java.util.Date;
 @Setter
 @AllArgsConstructor
 @NoArgsConstructor
-@NamedQuery(name = "selectAllPlayerCount", query = "select count(*) from Player ")
+@NamedQuery(name = "selectAllPlayerCount", query = "select count(p) from Player p ")
 public class Player {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
