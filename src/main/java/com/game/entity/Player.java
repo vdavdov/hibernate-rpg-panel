@@ -21,10 +21,10 @@ public class Player {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
-    @Column(nullable = false, name = "name")
+    @Column(nullable = false, name = "name", length = 12)
     private String name;
 
-    @Column(nullable = false, name = "title")
+    @Column(nullable = false, name = "title", length = 30)
     private String title;
 
     @Enumerated(EnumType.ORDINAL)
